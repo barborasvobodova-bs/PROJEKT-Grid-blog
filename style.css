@@ -170,37 +170,3 @@ blockquote::before, blockquote::after {
 
 
 
-/*figure img{
-  width: 100%;
-  margin: 0;
-}
-.tip{
-	background-color: var(--svetla);
-	padding: 15px;
-	height: min-content;
-}
-.tip p{
-	font-size: 14px;
-	margin: 0;
-  }
-.tip a{
-	color: var(--cervena);
-  }
-.tip img, figure img{
-  max-width: 100%;
-}
-.tip-vlevo{
-	border-right: 5px solid var(--oranzova);
-	margin-left: 30px;
-	
-  }
-.tip-vlevo p{
-	text-align: right;
-  }
-.tip-vpravo{
-	border-left: 5px solid var(--oranzova);
-	margin-right: 30px;
-  }
-.tip-vpravo p{
-	text-align: left;
-  }*/
