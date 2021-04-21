@@ -65,4 +65,142 @@ blockquote {
 	- https://css-tricks.com/patterns-for-practical-css-custom-properties-use/
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	gap: 0 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
+header, h2, p {
+	grid-column: 2 / 3;
+  }
+
+.tip-vlevo {
+	grid-column: 1 / 2;
+}
+
+figure{
+	grid-column: 1 / 4;
+  }
+
+blockquote{
+	grid-column: 1 / 4;
+  }
+
+.tip-vpravo {
+	grid-column: 3 / 4;
+  }
+
+footer {
+	grid-column: 2 / 3;
+}
+
+h1 {
+	color: var(--zelena);
+	font-size: 80px;
+}
+h2 {
+	color: var(--zelena);
+	font-size: 64px;
+}
+.meta { 
+	margin-top: 50px;
+	margin-bottom: 0;
+  }
+p {
+	margin-top: 0;
+}
+.meta, figcaption, blockquote, footer, footer a{
+	color: var(--seda);
+}
+blockquote {
+	font-size: 36px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+  }
+.tip {
+	color: var(--tmava);
+	background-color: var(--svetla);
+	font-size: 16px;
+	padding: 20px;
+	height: max-content;
+  }
+img {
+	width: 100%;
+	max-width: 1200px;
+  }
+  
+.tip-vlevo {
+	text-align: right;
+	border-right: 5px solid var(--oranzova);
+  }
+  
+.tip-vpravo {
+	border-left: 5px solid var(--oranzova);
+  }
+  
+.tip a {
+	color: var(--oranzova);
+  }
+  
+.tip p {
+	margin: 0;
+  }
+  
+p, figure, header {
+	margin: 0 0 30px 0;
+  }
+  
+h2 {
+	margin: 30px 0;
+  }
+
+blockquote::before, blockquote::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 3px;
+	background-color: var(--limetka);
+	margin: 20px auto;
+  }
+  
+
+
+
+/*figure img{
+  width: 100%;
+  margin: 0;
+}
+.tip{
+	background-color: var(--svetla);
+	padding: 15px;
+	height: min-content;
+}
+.tip p{
+	font-size: 14px;
+	margin: 0;
+  }
+.tip a{
+	color: var(--cervena);
+  }
+.tip img, figure img{
+  max-width: 100%;
+}
+.tip-vlevo{
+	border-right: 5px solid var(--oranzova);
+	margin-left: 30px;
+	
+  }
+.tip-vlevo p{
+	text-align: right;
+  }
+.tip-vpravo{
+	border-left: 5px solid var(--oranzova);
+	margin-right: 30px;
+  }
+.tip-vpravo p{
+	text-align: left;
+  }*/
